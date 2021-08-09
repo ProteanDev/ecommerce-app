@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "NODE_ENV=test jest --watch --runInBand --detectOpenHandles"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "@tippyjs/react": "^4.2.5",
+    "axios": "proteandev/axios#master",
+    "next": "latest",
+    "next-offline": "^5.0.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "autoprefixer": "^10.2.6",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6",
+    "node-mocks-http": "^1.10.1",
+    "postcss": "^8.3.5",
+    "prettier": "2.3.2",
+    "tailwindcss": "^2.2.4"
+  }
+}
