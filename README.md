@@ -1,4 +1,13 @@
+
+
 # Ecommerce Sample App from Christian Dela Peña
+
+
+To run this locally you need to have node installed with npm
+(`npm run dev`)
+or with yarn
+(`yarn dev`)
+
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
