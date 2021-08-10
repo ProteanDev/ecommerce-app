@@ -1,6 +1,6 @@
 {
   "short_name": "E-commerce",
-  "name": "E-commerce Test App",
+  "name": "E-commerce App",
   "icons": [],
   "start_url": "/?source=pwa",
   "background_color": "#3367D6",
@@ -8,6 +8,6 @@
   "scope": "/",
   "theme_color": "#3367D6",
   "shortcuts": [],
-  "description": "E-commerce Test App",
+  "description": "E-commerce App",
   "screenshots": []
 }

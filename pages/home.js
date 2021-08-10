@@ -11,6 +11,9 @@ import CartFAB from '../components/cart/CartFAB'
 const Wrapper = (props) => {
   const { siteData } = props
   const { appState, setAppState } = useContext(AppContext)
+
+  // useEffect(() => console.log('appState: ', appState), [appState])
+
   // updates siteData inside context if siteData prop changes
   useEffect(() => {
     setAppState({
