@@ -2,7 +2,7 @@ import Tippy from '@tippyjs/react'
 import { useState } from 'react'
 import { addToCartTooltipMsg } from '../../helpers'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartPlus, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import ModalView from '../ModalView'
 
 const ProductDetails = ({ addToCart, state, setState }) => {
@@ -40,7 +40,6 @@ const ProductDetails = ({ addToCart, state, setState }) => {
             <button
               className='bg-green-300 p-3 rounded-full'
               onClick={() => {
-                console.log('quantity: ', quantity)
                 if (addToCart) addToCart(selectedProduct, quantity)
                 return setState({ ...state, selectedProduct: null })
               }}

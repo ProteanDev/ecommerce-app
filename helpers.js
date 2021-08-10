@@ -20,46 +20,34 @@ export const paginate = (products, itemsPerPage, currentPage) =>
     currentPage * itemsPerPage,
   )
 
+export const generateId = (length) => {
+  let result = ''
+  const characters =
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+  const charactersLength = characters.length
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength))
+  }
+  return result
+}
+
 export const sanitizeCart = (cart) => {
   if (!cart) return cart
-
   const { products } = cart
-  const cleanedQuantity = products.map((p) => ({
+  const cleanedQuantity = products.map((p, i) => ({
+    id: generateId(5),
     ...p,
     quantity: parseInt(`${p.quantity}`),
   }))
 
-  // TODO: Fix this algo
-  //   const finalProducts = []
-  //   let previousProduct = null
-
-  //   cleanedQuantity
-  //     .sort((a, b) => sortCondition(a, b, 'productId', 'asc'))
-  //     .forEach((e) => {
-  //       if (previousProduct) {
-  //         if (previousProduct.productId === e.productId) {
-  //           finalProducts.push({
-  //             ...previousProduct,
-  //             ...e,
-  //             quantity: previousProduct.quantity + e.quantity,
-  //           })
-  //         }
-  //       }
-  //       previousProduct = e
-  //     })
-
-  //   console.log(finalProducts)
-
   return { ...cart, products: cleanedQuantity }
 }
 
-// sanitizeCart({
-//   products: [
-//     { productId: '1', quantity: '1' },
-//     { productId: '1', quantity: '1' },
-//     { productId: '1', quantity: '1' },
-//     { productId: '3', quantity: '1' },
-//     { productId: '3', quantity: '1' },
-//     { productId: '4', quantity: '1' },
-//   ],
-// })
+export const isValidSiteData = ({ users, products, categories, carts }) => {
+  return (
+    users.length > 0 ||
+    products.length > 0 ||
+    categories.length > 0 ||
+    carts.length > 0
+  )
+}

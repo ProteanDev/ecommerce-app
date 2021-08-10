@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 import AppContext, { initialAppContext } from '../../contexts/AppContext'
 import ModalView from '../ModalView'
 import { isValidSiteData, sanitizeCart } from '../../helpers'
@@ -13,9 +13,6 @@ const CartView = ({
   removeItem,
   checkout,
 }) => {
-  const cart = {}
-  useEffect(() => console.log('products on cart view: ', products), [products])
-
   const subtotal =
     products.length > 0
       ? products
@@ -118,7 +115,6 @@ const Cart = ({ siteData }) => {
   }
 
   const checkout = (cart) => {
-    console.log('Checking out cart: ', cart)
     if (window) {
       alert(
         `${cart.products.length} items in cart about to be checked out.\nEnd of Demo.\nplease contact dev.chris.dp@gmail.com to know more`,

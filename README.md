@@ -1,29 +1,26 @@
-# Next.js + Tailwind CSS Example
+# Ecommerce Sample App from Christian Dela Peña
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
 It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
 
-## Preview
+# Why I didn't use Styled Components?
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+I'm experimenting with Tailwind CSS, if you wish to see how I work in styled-components in action check this repo
+[Protean Card Editor](https://github.com/ProteanDev/protean-card-editor)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+# Why I didn't use TypeScript and Redux?
 
-## Deploy your own
+I do not want to introduce that much of a complexity yet on this demo project
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+# Why I didn't use Next js's page routes?
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+There's no need yet, if I get more time someday I will improve this demo to use that
 
-## How to use
+# This project use the following combinations to achieve simplicity
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- Next js's API Routes and axios to fetch data from fakestoreapi.com
+- React's Context API to manage app state
+- localStorage to persist data
+- Tailwind CSS and Tippy for UI
+- Service Workers to persist the whole site offline
