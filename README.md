@@ -2,7 +2,7 @@
 
 # Ecommerce Sample App from Chan D
 
-Demo URL: https://ecommerce-app-o12rya6ag-proteandev.vercel.app
+Demo URL: ecommerce-app-pi.vercel.app
 
 To run this locally you need to have node installed with npm
 (`npm run dev`)
