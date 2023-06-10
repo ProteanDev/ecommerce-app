@@ -1,6 +1,6 @@
 
 
-# Ecommerce Sample App from Christian Dela Peña
+# Ecommerce Sample App from Chan D
 
 Demo URL: https://ecommerce-app-o12rya6ag-proteandev.vercel.app
 
