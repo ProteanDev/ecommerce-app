@@ -1,36 +1,24 @@
+**Ecommerce Sample App by Chan D**
+Demo URL: [ecommerce-app-pi.vercel.app](https://ecommerce-app-pi.vercel.app)
 
+To run this app locally, you'll need to have Node installed with npm (`npm run dev`) or with yarn (`yarn dev`).
 
-# Ecommerce Sample App from Chan D
+This sample app demonstrates the usage of Tailwind CSS (v2.2) with Next.js. It follows the steps outlined in the official Tailwind documentation.
 
-Demo URL: ecommerce-app-pi.vercel.app
+It utilizes Tailwind CSS's Just-in-Time mode for improved efficiency.
 
-To run this locally you need to have node installed with npm
-(`npm run dev`)
-or with yarn
-(`yarn dev`)
+**Why didn't I use Styled Components?**
+I'm currently experimenting with Tailwind CSS. If you're interested in seeing my work with styled-components in action, you can check out this repository: [Protean Card Editor](https://github.com/example/protean-card-editor).
 
+**Why didn't I use TypeScript and Redux?**
+At the moment, I didn't want to introduce too much complexity to this demo project.
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+**Why didn't I use Next.js's page routes?**
+Currently, there's no immediate need for it. However, if I have more time in the future, I'll consider improving this demo to utilize Next.js's page routes.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
-
-# Why I didn't use Styled Components?
-
-I'm experimenting with Tailwind CSS, if you wish to see how I work in styled-components in action check this repo
-[Protean Card Editor](https://github.com/ProteanDev/protean-card-editor)
-
-# Why I didn't use TypeScript and Redux?
-
-I do not want to introduce that much of a complexity yet on this demo project
-
-# Why I didn't use Next js's page routes?
-
-There's no need yet, if I get more time someday I will improve this demo to use that
-
-# This project use the following combinations to achieve simplicity
-
-- Next js's API Routes and axios to fetch data from fakestoreapi.com
-- React's Context API to manage app state
-- localStorage to persist data
+This project employs the following combinations to achieve simplicity:
+- Next.js's API Routes and axios for fetching data from [fakestoreapi.com](https://fakestoreapi.com)
+- React's Context API for managing app state
+- localStorage for persisting data
 - Tailwind CSS and Tippy for UI
-- Service Workers to persist the whole site offline
+- Service Workers to enable offline functionality for the entire site
