@@ -8,7 +8,7 @@ This sample app demonstrates the usage of Tailwind CSS (v2.2) with Next.js. It f
 It utilizes Tailwind CSS's Just-in-Time mode for improved efficiency.
 
 **Why didn't I use Styled Components?**
-I'm currently experimenting with Tailwind CSS. If you're interested in seeing my work with styled-components in action, you can check out this repository: [Protean Card Editor](https://github.com/example/protean-card-editor).
+I'm currently experimenting with Tailwind CSS. If you're interested in seeing my work with styled-components in action, you can check out this repository: [Protean Card Editor](https://github.com/ProteanDev/protean-card-editor).
 
 **Why didn't I use TypeScript and Redux?**
 At the moment, I didn't want to introduce too much complexity to this demo project.
